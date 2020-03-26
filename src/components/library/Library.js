@@ -41,6 +41,7 @@ const Library = props => {
 							<StatusShelfCarousel title="In progress" display="card" bookList={inProgress} link="/shelf/inprogress" breadcrumbs={[{ label: "In progress", path: "/shelf/inprogress" }, { label: "Book details", path: null }]} history={props.history} />
 							<StatusShelfCarousel title="To be read" display="card" bookList={toBeRead} breadcrumbs={[{ label: "To be read", path: "/shelf/toberead" }, { label: "Book details", path: null }]} link="/shelf/toberead" history={props.history} />
 							{
+								props.userBooks.length > 0 &&
 								props.recommendations &&
 								props.recommendations.books &&
 								<StatusShelfCarousel title="Recommendations" display="carousel" bookList={props.recommendations.books} breadcrumbs={[{ label: "Recommendations", path: "/shelf/recommendations" }, { label: "Book details", path: null }]} history={props.history} />
