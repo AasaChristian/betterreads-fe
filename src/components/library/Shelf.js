@@ -24,7 +24,7 @@ const Shelf = props => {
 	useDocumentTitle('Readrr - Shelf');
 
 	const shelf = props.match.params.shelf;
-	console.log(props.currentShelf)
+	
 	useEffect(() => {
 		props.setCurrentShelf(shelf);
 		Event('Shelf', 'A user looked at a shelf of books', 'SHELF');
