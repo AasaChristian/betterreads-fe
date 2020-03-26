@@ -64,7 +64,6 @@ const OnboardingQuiz = props => {
 
 	const onSubmit = event => {
 		event.preventDefault();
-		console.log(checkedGenres);
 	};
 
 	const genres = ['Art', 'Biography', 'Business', 'Chick Lit', 'Christian', 'Classics', 'Comics', 'Contemporary', 'Cookbooks', 'Graphic Novels', 'Historical Fiction', 'History', 'Horror', 'Humor & Comedy', 'Manga', 'Memoir', 'Music', 'Mystery', 'Nonfiction', 'Paranormal', 'Philosophy', 'Poetry', 'Psychology', 'Religion', 'Romance', 'Science', 'Science Fiction', 'Self Help', 'Suspense', 'Spirituality', 'Sports', 'Thriller', 'Travel', 'Young Adult'];
